@@ -1161,19 +1161,19 @@
 
 
 
-// let navbarToggler = document.querySelector(".navbar-toggler");
-//   const navbarCollapse = document.querySelector(".navbar-collapse");
+let navbarToggler = document.querySelector(".navbar-toggler");
+  const navbarCollapse = document.querySelector(".navbar-collapse");
 
-//   document.querySelectorAll(".ud-menu-scroll").forEach((e) =>
-//     e.addEventListener("click", () => {
-//       navbarToggler.classList.remove("active");
-//       navbarCollapse.classList.remove("show");
-//     })
-//   );
-//   navbarToggler.addEventListener("click", function () {
-//     navbarToggler.classList.toggle("active");
-//     navbarCollapse.classList.toggle("show");
-//   });
+  document.querySelectorAll(".ud-menu-scroll").forEach((e) =>
+    e.addEventListener("click", () => {
+      navbarToggler.classList.remove("active");
+      navbarCollapse.classList.remove("show");
+    })
+  );
+  navbarToggler.addEventListener("click", function () {
+    navbarToggler.classList.toggle("active");
+    navbarCollapse.classList.toggle("show");
+  });
 
 
 
@@ -1206,8 +1206,7 @@
           const refElement = document.querySelector(val);
           const scrollTopMinus = scrollPos + 73;
           if (
-            refElement.offsetTop <= scrollTopMinus &&
-            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+            refElement.offsetTop <= scrollTopMinus && refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
           ) {
             document
               .querySelector(".ud-menu-scroll")
