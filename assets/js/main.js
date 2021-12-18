@@ -33,6 +33,8 @@
   };
 
 
+  const myTimeout_half_second = setTimeout(myGreeting, 50);
+
   
 
 
@@ -43,8 +45,8 @@
   document.querySelectorAll(".ud-menu-scroll").forEach((e) =>
     e.addEventListener("click", () => {
       navbarToggler.classList.remove("active");
-      setTimeout(navbarCollapse.classList.remove("show fade-out"), 50);
-      
+      // setTimeout(myGreeting, 50);
+      navbarCollapse.classList.remove("show fade-out");
     })
   );
   navbarToggler.addEventListener("click", function () {
