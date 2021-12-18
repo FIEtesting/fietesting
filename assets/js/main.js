@@ -46,12 +46,14 @@
     e.addEventListener("click", () => {
       navbarToggler.classList.remove("active");
       // setTimeout(myGreeting, 50);
-      navbarCollapse.classList.remove("show fade-out");
+      navbarCollapse.classList.remove("show");
+      navbarCollapse.classList.remove("fade-out");
     })
   );
   navbarToggler.addEventListener("click", function () {
     navbarToggler.classList.toggle("active");
-    navbarCollapse.classList.toggle("show fade-in");
+    navbarCollapse.classList.toggle("show");
+    navbarCollapse.classList.toggle("fade-in");
   });
 
   // ===== submenu
