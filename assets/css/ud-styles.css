@@ -161,10 +161,14 @@ p {
 }
 
 
+
 @media (max-width: 767px) {
   .container {
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .ud-about-image{
+    height: 200px;
   }
 }
 
