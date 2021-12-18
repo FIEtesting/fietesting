@@ -177,6 +177,9 @@ p {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .hide {
+    display: none;
+  }
 }
 .ud-about-image{
   height: 500px;
