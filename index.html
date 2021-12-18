@@ -1143,7 +1143,7 @@
       pageLink.forEach((elem) => {
         elem.addEventListener("click", (e) => {
           e.preventDefault();
-          document.querySelector(elem.getAttribute(".scrole-mano")).scrollIntoView({
+          document.querySelector(elem.getAttribute("href")).scrollIntoView({
             behavior: "smooth",
             offsetTop: 1 - 60,
           });
@@ -1160,7 +1160,7 @@
 
         for (let i = 0; i < sections.length; i++) {
           const currLink = sections[i];
-          const val = currLink.getAttribute("href");
+          const val = currLink.getAttribute(".scrole-mano");
           const refElement = document.querySelector(val);
           const scrollTopMinus = scrollPos + 73;
           if (
