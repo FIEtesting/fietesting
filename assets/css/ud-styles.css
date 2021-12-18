@@ -167,9 +167,6 @@ p {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .ud-about-image{
-    height: 500px;
-  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -177,12 +174,9 @@ p {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .hide {
+  .mano-hide {
     display: none;
   }
-}
-.ud-about-image{
-  height: 500px;
 }
 
 .back-to-top {
