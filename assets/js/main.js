@@ -40,13 +40,11 @@
     e.addEventListener("click", () => {
       navbarToggler.classList.remove("active");
       navbarCollapse.classList.remove("show");
-      console.log('PASPAUSTAS')
     })
   );
   navbarToggler.addEventListener("click", function () {
     navbarToggler.classList.toggle("active");
     navbarCollapse.classList.toggle("show");
-    console.log('ATSPAUSTAS')
   });
 
   // ===== submenu
