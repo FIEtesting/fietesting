@@ -42,7 +42,8 @@
       navbarToggler.classList.remove("active");
       // setTimeout(myGreeting, 50);
       setTimeout(navbarCollapse.classList.remove("show"), 50);
-      navbarCollapse.classList.remove("fade-out");
+      navbarCollapse.classList.remove("fade-in");
+      navbarCollapse.classList.toggle("fade-out");
     })
   );
   navbarToggler.addEventListener("click", function () {
