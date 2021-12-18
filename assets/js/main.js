@@ -39,12 +39,12 @@
   document.querySelectorAll(".ud-menu-scroll").forEach((e) =>
     e.addEventListener("click", () => {
       navbarToggler.classList.remove("active");
-      navbarCollapse.classList.remove("show");
+      navbarCollapse.classList.remove("show fade-out");
     })
   );
   navbarToggler.addEventListener("click", function () {
     navbarToggler.classList.toggle("active");
-    navbarCollapse.classList.toggle("show");
+    navbarCollapse.classList.toggle("show fade-in");
   });
 
   // ===== submenu

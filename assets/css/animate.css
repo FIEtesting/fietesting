@@ -259,3 +259,30 @@
     opacity: 1;
   }
 }
+
+
+/**
+ * ----------------------------------------
+ * animation fade-out
+ * ----------------------------------------
+ */
+ .fade-out {
+	-webkit-animation: fade-out 1s ease-out both;
+	        animation: fade-out 1s ease-out both;
+}
+ @-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
