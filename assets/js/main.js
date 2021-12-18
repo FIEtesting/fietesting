@@ -41,7 +41,7 @@
     e.addEventListener("click", () => {
       navbarToggler.classList.remove("active");
       // setTimeout(myGreeting, 50);
-      navbarCollapse.classList.remove("show");
+      setTimeout(navbarCollapse.classList.remove("show"), 50);
       navbarCollapse.classList.remove("fade-out");
     })
   );
