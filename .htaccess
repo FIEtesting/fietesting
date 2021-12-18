@@ -2,9 +2,11 @@ Header always append X-Frame-Options SAMEORIGIN
 Header set X-Content-Type-Options nosniff
 RedirectMatch 404 ^/abc/.*$
 
+
 RewriteEngine On
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
 
 <IfModule mod_expires.c>
