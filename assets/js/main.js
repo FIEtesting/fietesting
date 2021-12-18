@@ -33,11 +33,6 @@
   };
 
 
-  const myTimeout_half_second = setTimeout(myGreeting, 50);
-
-  
-
-
   //===== close navbar-collapse when a  clicked
   let navbarToggler = document.querySelector(".navbar-toggler");
   const navbarCollapse = document.querySelector(".navbar-collapse");
