@@ -160,10 +160,19 @@ p {
   background: var(--heading-color);
 }
 
+.ud-about-image{
+  height: 500px;
+
+}
+
 @media (max-width: 767px) {
   .container {
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .ud-about-image{
+    height: 200px;
+    
   }
 }
 
@@ -171,6 +180,10 @@ p {
   .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .ud-about-image{
+    height: 100px;
+    
   }
 }
 
