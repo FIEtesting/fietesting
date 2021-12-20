@@ -2622,3 +2622,14 @@ p {
   }
 }
 /*# sourceMappingURL=ud-styles.css.map */
+
+
+
+.ud-about-wrapper {
+  border-radius: 30px;
+  border: none;
+}
+
+.ud-about-content .tag {
+    border-radius: 5px;
+  }
