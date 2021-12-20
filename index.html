@@ -953,17 +953,15 @@
                   <h3 class="ud-contact-form-title">Send us a Message</h3>
                   <form class="ud-contact-form">
                     <div class="ud-form-group">
-                      <label type="text" name="name" id="full-name" placeholder="First and Last" required="">Full Name*</label>
+                      <label for="full-name">Full Name*</label>
                       <input
-                        type="text"
-                        name="fullName"
-                        placeholder="Adam Gelius"
+                        type="text" name="name" id="full-name" placeholder="First and Last" required=""
                       />
                     </div>
                     <div class="ud-form-group">
-                      <label for="email">Email*</label>
+                      <label for="email-address">Email*</label>
                       <input
-                      type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required=""
+                        type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required=""
                       />
                     </div>
                     <div class="ud-form-group">
@@ -977,22 +975,24 @@
                     <div class="ud-form-group">
                       <label for="message">Message*</label>
                       <textarea
-                      name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""
+                       name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur."
                       ></textarea>
+                      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                     </div>
                     <div class="ud-form-group mb-0">
-                      <button type="submit" class="ud-main-btn">
+                      <button type="submit" value="Submit" class="ud-main-btn">
                         Send Message
                       </button>
                     </div>
-                  </form>
-                </div>
+                </form>
               </div>
             </div>
           </div>
+        </div>
+      </fieldset>
 
 
-      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+      <!-- <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
         <fieldset id="fs-frm-inputs">
           <label for="full-name">Full Name</label>
           <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
@@ -1003,7 +1003,7 @@
           <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
         </fieldset>
         <input type="submit" value="Submit">
-      </form>
+      </form> -->
 
 
     </section>
