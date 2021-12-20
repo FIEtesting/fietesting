@@ -11,9 +11,9 @@
 
 .ud-about-wrapper {
   background: var(--white);
-  border: 1px solid rgba(0, 0, 0, 0.08);
   display: flex;
   justify-content: space-between;
+  border-radius: 30px;
 
   @media #{$md, $xs} {
     display: block;
